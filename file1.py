@@ -1,13 +1,17 @@
-# Python code to illustrate working of try()  
-def divide(x, y): 
-    try: 
-        # Floor Division : Gives only Fractional
-        # Part as Answer 
-        result = x // y 
-        print("Yeah ! Your answer is :", result) 
-    except ZeroDivisionError: 
-        print("Sorry ! You are dividing by zero ") 
-  
-# Look at parameters and note the working of Program 
-divide(3, 2) 
-divide(3, 0)
+import json
+
+def lambda_handler(event, context):
+    # TODO implement
+
+    
+    length = event['length']
+    width = event['width']
+    
+    print(f"The area is {length}")
+    print(f"The area is {width}")
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
+
