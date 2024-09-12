@@ -2,9 +2,7 @@ import json
 
 def lambda_handler(event, context):
     # TODO implement
-    
-    print(f"Event : {event}")
-    print(f"Event : {context}")
+
     
     length = event['length']
     width = event['width']
