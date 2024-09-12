@@ -6,6 +6,8 @@ def lambda_handler(event, context):
     
     length = event['length']
     width = event['width']
+    length = event['length']
+    width = event['width']
     
     print(f"The area is {length}")
     print(f"The area is {width}")
